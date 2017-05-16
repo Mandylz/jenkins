@@ -1,0 +1,825 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="e399ae60-c652-43e4-b44f-0689c9cfa2cb" activeEnvironment="Default" name="Country" soapui-version="5.3.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="eee2b7ae-da4c-48e2-96e5-322a806b5919" wsaVersion="NONE" name="countrySoap" type="wsdl" bindingName="{http://www.webserviceX.NET}countrySoap" soapVersion="1_1" anonymous="optional" definition="http://www.webservicex.net/country.asmx?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://www.webservicex.net/country.asmx</con:endpoint></con:endpoints><con:operation id="8e99de4b-3a3c-4652-84b3-40164aa559b5" isOneWay="false" action="http://www.webserviceX.NET/GetCountries" name="GetCountries" bindingOperationName="GetCountries" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="40fc3cdc-338e-4956-92c7-33b778cd28e9" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/country.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webserviceX.NET">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:GetCountries/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webserviceX.NET/GetCountries"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="de3001e6-07a2-400b-8872-2507ccc07590" isOneWay="false" action="http://www.webserviceX.NET/GetCountryByCountryCode" name="GetCountryByCountryCode" bindingOperationName="GetCountryByCountryCode" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="61388a2d-2996-4d9e-a197-381d2eb390c8" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/country.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webserviceX.NET">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:GetCountryByCountryCode>\r
+         <!--Optional:-->\r
+         <web:CountryCode>?</web:CountryCode>\r
+      </web:GetCountryByCountryCode>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webserviceX.NET/GetCountryByCountryCode"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="c4043466-b5b1-46df-b3e3-2e08f3fadd1a" isOneWay="false" action="http://www.webserviceX.NET/GetCountryByCurrencyCode" name="GetCountryByCurrencyCode" bindingOperationName="GetCountryByCurrencyCode" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="e9bbc9fb-7cf8-4fec-a5d4-9b66c2a72c50" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/country.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webserviceX.NET">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:GetCountryByCurrencyCode>\r
+         <!--Optional:-->\r
+         <web:CurrencyCode>?</web:CurrencyCode>\r
+      </web:GetCountryByCurrencyCode>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webserviceX.NET/GetCountryByCurrencyCode"/></con:call></con:operation><con:operation id="e466e2fd-b3ff-4249-a9a1-72b86e66987e" isOneWay="false" action="http://www.webserviceX.NET/GetCurrencies" name="GetCurrencies" bindingOperationName="GetCurrencies" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="1a8d5d1c-cfeb-4d44-aefa-12d46bb9fdde" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/country.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webserviceX.NET">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:GetCurrencies/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webserviceX.NET/GetCurrencies"/></con:call></con:operation><con:operation id="766dc948-4af5-464e-a5ad-0dc6bec426de" isOneWay="false" action="http://www.webserviceX.NET/GetCurrencyByCountry" name="GetCurrencyByCountry" bindingOperationName="GetCurrencyByCountry" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="c95463be-cdbe-45e0-b215-c5c82823209b" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/country.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webserviceX.NET">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:GetCurrencyByCountry>\r
+         <!--Optional:-->\r
+         <web:CountryName>Iran</web:CountryName>\r
+      </web:GetCurrencyByCountry>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webserviceX.NET/GetCurrencyByCountry"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="01318eb6-c0c8-424e-ab4e-3f923f985b4b" isOneWay="false" action="http://www.webserviceX.NET/GetCurrencyCode" name="GetCurrencyCode" bindingOperationName="GetCurrencyCode" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="c44018bf-e678-4f57-888f-8f9b44976a74" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/country.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webserviceX.NET">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:GetCurrencyCode/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webserviceX.NET/GetCurrencyCode"/></con:call></con:operation><con:operation id="db997425-1eae-415e-bcd6-67c661a32f95" isOneWay="false" action="http://www.webserviceX.NET/GetCurrencyCodeByCurrencyName" name="GetCurrencyCodeByCurrencyName" bindingOperationName="GetCurrencyCodeByCurrencyName" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="bf9aad0f-a912-40c9-b730-43fafb3000f2" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/country.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webserviceX.NET">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:GetCurrencyCodeByCurrencyName>\r
+         <!--Optional:-->\r
+         <web:CurrencyName>?</web:CurrencyName>\r
+      </web:GetCurrencyCodeByCurrencyName>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webserviceX.NET/GetCurrencyCodeByCurrencyName"/></con:call></con:operation><con:operation id="133970e3-dff4-4bde-99f4-7c460262e52d" isOneWay="false" action="http://www.webserviceX.NET/GetGMTbyCountry" name="GetGMTbyCountry" bindingOperationName="GetGMTbyCountry" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="6e11f08e-bd5a-4cd3-b34c-3ea66e062c54" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/country.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webserviceX.NET">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:GetGMTbyCountry>\r
+         <!--Optional:-->\r
+         <web:CountryName>?</web:CountryName>\r
+      </web:GetGMTbyCountry>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webserviceX.NET/GetGMTbyCountry"/></con:call></con:operation><con:operation id="db0754d8-a115-40ad-8721-466c2dd5d104" isOneWay="false" action="http://www.webserviceX.NET/GetISD" name="GetISD" bindingOperationName="GetISD" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="4cbff9f3-8019-4335-886c-1b35cd0eb7a9" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/country.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webserviceX.NET">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:GetISD>\r
+         <!--Optional:-->\r
+         <web:CountryName>?</web:CountryName>\r
+      </web:GetISD>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webserviceX.NET/GetISD"/></con:call></con:operation><con:operation id="7447747a-ac53-481a-8e9f-3d94ffe4ba08" isOneWay="false" action="http://www.webserviceX.NET/GetISOCountryCodeByCountyName" name="GetISOCountryCodeByCountyName" bindingOperationName="GetISOCountryCodeByCountyName" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="1c4ec7f5-9d97-45e0-b9f1-e88a8665267a" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/country.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webserviceX.NET">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:GetISOCountryCodeByCountyName>\r
+         <!--Optional:-->\r
+         <web:CountryName>?</web:CountryName>\r
+      </web:GetISOCountryCodeByCountyName>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webserviceX.NET/GetISOCountryCodeByCountyName"/></con:call></con:operation></con:interface><con:testSuite id="4e916aec-dbe6-4967-9f50-f703866dc9f6" name="TestSuite 1"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="41a23e21-4492-41fe-94cf-73f1beb7b85c" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase 1" searchProperties="true"><con:settings/><con:testStep type="request" name="SOAP Request-case2" id="83454264-d9de-495e-9e43-cd565a76c4ac"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>countrySoap</con:interface><con:operation>GetCountryByCountryCode</con:operation><con:request name="SOAP Request-case2" id="888caa38-a9be-464f-875c-e7a33271688e"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/country.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webserviceX.NET">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+     <web:GetCountryByCountryCode>
+         <!--Optional:-->
+         <web:CountryCode>${Properties#CountryCode}</web:CountryCode>
+      </web:GetCountryByCountryCode>
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="49c770da-9220-4720-82dc-172af9dbf1e6"/><con:assertion type="Schema Compliance" id="ee81c8f9-456b-4691-b478-0a1395bc38b1"><con:configuration/></con:assertion><con:assertion type="Simple Contains" id="beecffec-901c-43af-9045-bc37508b808b" name="Contains"><con:configuration><token>Sweden</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="properties" name="Properties" id="90452937-b615-433f-bb16-58942125abcc"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>CountryCode</con:name><con:value>SE</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="request" name="SOAP Request-GetCountries" id="b79582df-08ce-45b5-9a92-2d7f4a751304"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>countrySoap</con:interface><con:operation>GetCountries</con:operation><con:request name="SOAP Request-GetCountries" id="5482a408-7499-4363-86d0-e1c2216d1a36"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/country.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webserviceX.NET">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:GetCountries/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="b07bde5e-6d79-4702-afc8-6191103f3a03"/><con:assertion type="Schema Compliance" id="5a87ad13-36ce-4e35-ad0b-d5d4ae76b843"><con:configuration/></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="SOAP Request-GetCurrencyByCountry" id="88c6c5cc-b5a6-44b3-be55-67a4f4e8455e"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>countrySoap</con:interface><con:operation>GetCurrencyByCountry</con:operation><con:request name="SOAP Request-GetCurrencyByCountry" id="ce1877cb-423f-483f-a703-56dc00c0c429"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/country.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">\r
+   <soap:Body>\r
+      <GetCountriesResponse xmlns="http://www.webserviceX.NET">\r
+         <GetCountriesResult><![CDATA[<NewDataSet>
+  <Table>
+    <Name>Afghanistan, Islamic State of</Name>
+  </Table>
+  <Table>
+    <Name>Albania</Name>
+  </Table>
+  <Table>
+    <Name>Algeria</Name>
+  </Table>
+  <Table>
+    <Name>American Samoa</Name>
+  </Table>
+  <Table>
+    <Name>Andorra, Principality of</Name>
+  </Table>
+  <Table>
+    <Name>Angola</Name>
+  </Table>
+  <Table>
+    <Name>Anguilla</Name>
+  </Table>
+  <Table>
+    <Name>Antarctica</Name>
+  </Table>
+  <Table>
+    <Name>Antigua and Barbuda</Name>
+  </Table>
+  <Table>
+    <Name>Argentina</Name>
+  </Table>
+  <Table>
+    <Name>Armenia</Name>
+  </Table>
+  <Table>
+    <Name>Aruba</Name>
+  </Table>
+  <Table>
+    <Name>Australia</Name>
+  </Table>
+  <Table>
+    <Name>Austria</Name>
+  </Table>
+  <Table>
+    <Name>Azerbaidjan</Name>
+  </Table>
+  <Table>
+    <Name>Bahamas</Name>
+  </Table>
+  <Table>
+    <Name>Bahrain</Name>
+  </Table>
+  <Table>
+    <Name>Bangladesh</Name>
+  </Table>
+  <Table>
+    <Name>Barbados</Name>
+  </Table>
+  <Table>
+    <Name>Belarus</Name>
+  </Table>
+  <Table>
+    <Name>Belgium</Name>
+  </Table>
+  <Table>
+    <Name>Belize</Name>
+  </Table>
+  <Table>
+    <Name>Benin</Name>
+  </Table>
+  <Table>
+    <Name>Bermuda</Name>
+  </Table>
+  <Table>
+    <Name>Bhutan</Name>
+  </Table>
+  <Table>
+    <Name>Bolivia</Name>
+  </Table>
+  <Table>
+    <Name>Bosnia-Herzegovina</Name>
+  </Table>
+  <Table>
+    <Name>Botswana</Name>
+  </Table>
+  <Table>
+    <Name>Bouvet Island</Name>
+  </Table>
+  <Table>
+    <Name>Brazil</Name>
+  </Table>
+  <Table>
+    <Name>British Indian Ocean Territory</Name>
+  </Table>
+  <Table>
+    <Name>Brunei Darussalam</Name>
+  </Table>
+  <Table>
+    <Name>Bulgaria</Name>
+  </Table>
+  <Table>
+    <Name>Burkina Faso</Name>
+  </Table>
+  <Table>
+    <Name>Burundi</Name>
+  </Table>
+  <Table>
+    <Name>Cambodia, Kingdom of</Name>
+  </Table>
+  <Table>
+    <Name>Cameroon</Name>
+  </Table>
+  <Table>
+    <Name>Canada</Name>
+  </Table>
+  <Table>
+    <Name>Cape Verde</Name>
+  </Table>
+  <Table>
+    <Name>Cayman Islands</Name>
+  </Table>
+  <Table>
+    <Name>Central African Republic</Name>
+  </Table>
+  <Table>
+    <Name>Chad</Name>
+  </Table>
+  <Table>
+    <Name>Chile</Name>
+  </Table>
+  <Table>
+    <Name>China</Name>
+  </Table>
+  <Table>
+    <Name>Christmas Island</Name>
+  </Table>
+  <Table>
+    <Name>Cocos (Keeling) Islands</Name>
+  </Table>
+  <Table>
+    <Name>Colombia</Name>
+  </Table>
+  <Table>
+    <Name>Comoros</Name>
+  </Table>
+  <Table>
+    <Name>Congo</Name>
+  </Table>
+  <Table>
+    <Name>Congo, The Democratic Republic of the</Name>
+  </Table>
+  <Table>
+    <Name>Cook Islands</Name>
+  </Table>
+  <Table>
+    <Name>Costa Rica</Name>
+  </Table>
+  <Table>
+    <Name>Croatia</Name>
+  </Table>
+  <Table>
+    <Name>Cuba</Name>
+  </Table>
+  <Table>
+    <Name>Cyprus</Name>
+  </Table>
+  <Table>
+    <Name>Czech Republic</Name>
+  </Table>
+  <Table>
+    <Name>Denmark</Name>
+  </Table>
+  <Table>
+    <Name>Djibouti</Name>
+  </Table>
+  <Table>
+    <Name>Dominica</Name>
+  </Table>
+  <Table>
+    <Name>Dominican Republic</Name>
+  </Table>
+  <Table>
+    <Name>East Timor</Name>
+  </Table>
+  <Table>
+    <Name>Ecuador</Name>
+  </Table>
+  <Table>
+    <Name>Egypt</Name>
+  </Table>
+  <Table>
+    <Name>El Salvador</Name>
+  </Table>
+  <Table>
+    <Name>Equatorial Guinea</Name>
+  </Table>
+  <Table>
+    <Name>Eritrea</Name>
+  </Table>
+  <Table>
+    <Name>Estonia</Name>
+  </Table>
+  <Table>
+    <Name>Ethiopia</Name>
+  </Table>
+  <Table>
+    <Name>Falkland Islands</Name>
+  </Table>
+  <Table>
+    <Name>Faroe Islands</Name>
+  </Table>
+  <Table>
+    <Name>Fiji</Name>
+  </Table>
+  <Table>
+    <Name>Finland</Name>
+  </Table>
+  <Table>
+    <Name>Former Czechoslovakia</Name>
+  </Table>
+  <Table>
+    <Name>Former USSR</Name>
+  </Table>
+  <Table>
+    <Name>France</Name>
+  </Table>
+  <Table>
+    <Name>France (European Territory)</Name>
+  </Table>
+  <Table>
+    <Name>French Guyana</Name>
+  </Table>
+  <Table>
+    <Name>French Southern Territories</Name>
+  </Table>
+  <Table>
+    <Name>Gabon</Name>
+  </Table>
+  <Table>
+    <Name>Gambia</Name>
+  </Table>
+  <Table>
+    <Name>Georgia</Name>
+  </Table>
+  <Table>
+    <Name>Germany</Name>
+  </Table>
+  <Table>
+    <Name>Ghana</Name>
+  </Table>
+  <Table>
+    <Name>Gibraltar</Name>
+  </Table>
+  <Table>
+    <Name>Great Britain</Name>
+  </Table>
+  <Table>
+    <Name>Greece</Name>
+  </Table>
+  <Table>
+    <Name>Greenland</Name>
+  </Table>
+  <Table>
+    <Name>Grenada</Name>
+  </Table>
+  <Table>
+    <Name>Guadeloupe (French)</Name>
+  </Table>
+  <Table>
+    <Name>Guam (USA)</Name>
+  </Table>
+  <Table>
+    <Name>Guatemala</Name>
+  </Table>
+  <Table>
+    <Name>Guinea</Name>
+  </Table>
+  <Table>
+    <Name>Guinea Bissau</Name>
+  </Table>
+  <Table>
+    <Name>Guyana</Name>
+  </Table>
+  <Table>
+    <Name>Haiti</Name>
+  </Table>
+  <Table>
+    <Name>Heard and McDonald Islands</Name>
+  </Table>
+  <Table>
+    <Name>Holy See (Vatican City State)</Name>
+  </Table>
+  <Table>
+    <Name>Honduras</Name>
+  </Table>
+  <Table>
+    <Name>Hong Kong</Name>
+  </Table>
+  <Table>
+    <Name>Hungary</Name>
+  </Table>
+  <Table>
+    <Name>Iceland</Name>
+  </Table>
+  <Table>
+    <Name>India</Name>
+  </Table>
+  <Table>
+    <Name>Indonesia</Name>
+  </Table>
+  <Table>
+    <Name>Iran</Name>
+  </Table>
+  <Table>
+    <Name>Iraq</Name>
+  </Table>
+  <Table>
+    <Name>Ireland</Name>
+  </Table>
+  <Table>
+    <Name>Israel</Name>
+  </Table>
+  <Table>
+    <Name>Italy</Name>
+  </Table>
+  <Table>
+    <Name>Ivory Coast (Cote D'Ivoire)</Name>
+  </Table>
+  <Table>
+    <Name>Jamaica</Name>
+  </Table>
+  <Table>
+    <Name>Japan</Name>
+  </Table>
+  <Table>
+    <Name>Jordan</Name>
+  </Table>
+  <Table>
+    <Name>Kazakhstan</Name>
+  </Table>
+  <Table>
+    <Name>Kenya</Name>
+  </Table>
+  <Table>
+    <Name>Kiribati</Name>
+  </Table>
+  <Table>
+    <Name>Kuwait</Name>
+  </Table>
+  <Table>
+    <Name>Kyrgyz Republic (Kyrgyzstan)</Name>
+  </Table>
+  <Table>
+    <Name>Laos</Name>
+  </Table>
+  <Table>
+    <Name>Latvia</Name>
+  </Table>
+  <Table>
+    <Name>Lebanon</Name>
+  </Table>
+  <Table>
+    <Name>Lesotho</Name>
+  </Table>
+  <Table>
+    <Name>Liberia</Name>
+  </Table>
+  <Table>
+    <Name>Libya</Name>
+  </Table>
+  <Table>
+    <Name>Liechtenstein</Name>
+  </Table>
+  <Table>
+    <Name>Lithuania</Name>
+  </Table>
+  <Table>
+    <Name>Luxembourg</Name>
+  </Table>
+  <Table>
+    <Name>Macau</Name>
+  </Table>
+  <Table>
+    <Name>Macedonia</Name>
+  </Table>
+  <Table>
+    <Name>Madagascar</Name>
+  </Table>
+  <Table>
+    <Name>Malawi</Name>
+  </Table>
+  <Table>
+    <Name>Malaysia</Name>
+  </Table>
+  <Table>
+    <Name>Maldives</Name>
+  </Table>
+  <Table>
+    <Name>Mali</Name>
+  </Table>
+  <Table>
+    <Name>Malta</Name>
+  </Table>
+  <Table>
+    <Name>Marshall Islands</Name>
+  </Table>
+  <Table>
+    <Name>Martinique (French)</Name>
+  </Table>
+  <Table>
+    <Name>Mauritania</Name>
+  </Table>
+  <Table>
+    <Name>Mauritius</Name>
+  </Table>
+  <Table>
+    <Name>Mayotte</Name>
+  </Table>
+  <Table>
+    <Name>Mexico</Name>
+  </Table>
+  <Table>
+    <Name>Micronesia</Name>
+  </Table>
+  <Table>
+    <Name>Moldavia</Name>
+  </Table>
+  <Table>
+    <Name>Monaco</Name>
+  </Table>
+  <Table>
+    <Name>Mongolia</Name>
+  </Table>
+  <Table>
+    <Name>Montserrat</Name>
+  </Table>
+  <Table>
+    <Name>Morocco</Name>
+  </Table>
+  <Table>
+    <Name>Mozambique</Name>
+  </Table>
+  <Table>
+    <Name>Myanmar</Name>
+  </Table>
+  <Table>
+    <Name>Namibia</Name>
+  </Table>
+  <Table>
+    <Name>Nauru</Name>
+  </Table>
+  <Table>
+    <Name>Nepal</Name>
+  </Table>
+  <Table>
+    <Name>Netherlands</Name>
+  </Table>
+  <Table>
+    <Name>Netherlands Antilles</Name>
+  </Table>
+  <Table>
+    <Name>Neutral Zone</Name>
+  </Table>
+  <Table>
+    <Name>New Caledonia (French)</Name>
+  </Table>
+  <Table>
+    <Name>New Zealand</Name>
+  </Table>
+  <Table>
+    <Name>Nicaragua</Name>
+  </Table>
+  <Table>
+    <Name>Niger</Name>
+  </Table>
+  <Table>
+    <Name>Nigeria</Name>
+  </Table>
+  <Table>
+    <Name>Niue</Name>
+  </Table>
+  <Table>
+    <Name>Norfolk Island</Name>
+  </Table>
+  <Table>
+    <Name>North Korea</Name>
+  </Table>
+  <Table>
+    <Name>Northern Mariana Islands</Name>
+  </Table>
+  <Table>
+    <Name>Norway</Name>
+  </Table>
+  <Table>
+    <Name>Oman</Name>
+  </Table>
+  <Table>
+    <Name>Pakistan</Name>
+  </Table>
+  <Table>
+    <Name>Palau</Name>
+  </Table>
+  <Table>
+    <Name>Panama</Name>
+  </Table>
+  <Table>
+    <Name>Papua New Guinea</Name>
+  </Table>
+  <Table>
+    <Name>Paraguay</Name>
+  </Table>
+  <Table>
+    <Name>Peru</Name>
+  </Table>
+  <Table>
+    <Name>Philippines</Name>
+  </Table>
+  <Table>
+    <Name>Pitcairn Island</Name>
+  </Table>
+  <Table>
+    <Name>Poland</Name>
+  </Table>
+  <Table>
+    <Name>Polynesia (French)</Name>
+  </Table>
+  <Table>
+    <Name>Portugal</Name>
+  </Table>
+  <Table>
+    <Name>Puerto Rico</Name>
+  </Table>
+  <Table>
+    <Name>Qatar</Name>
+  </Table>
+  <Table>
+    <Name>Reunion (French)</Name>
+  </Table>
+  <Table>
+    <Name>Romania</Name>
+  </Table>
+  <Table>
+    <Name>Russian Federation</Name>
+  </Table>
+  <Table>
+    <Name>Rwanda</Name>
+  </Table>
+  <Table>
+    <Name>S. Georgia &amp; S. Sandwich Isls.</Name>
+  </Table>
+  <Table>
+    <Name>Saint Helena</Name>
+  </Table>
+  <Table>
+    <Name>Saint Kitts &amp; Nevis Anguilla</Name>
+  </Table>
+  <Table>
+    <Name>Saint Lucia</Name>
+  </Table>
+  <Table>
+    <Name>Saint Pierre and Miquelon</Name>
+  </Table>
+  <Table>
+    <Name>Saint Tome (Sao Tome) and Principe</Name>
+  </Table>
+  <Table>
+    <Name>Saint Vincent &amp; Grenadines</Name>
+  </Table>
+  <Table>
+    <Name>Samoa</Name>
+  </Table>
+  <Table>
+    <Name>San Marino</Name>
+  </Table>
+  <Table>
+    <Name>Saudi Arabia</Name>
+  </Table>
+  <Table>
+    <Name>Senegal</Name>
+  </Table>
+  <Table>
+    <Name>Seychelles</Name>
+  </Table>
+  <Table>
+    <Name>Sierra Leone</Name>
+  </Table>
+  <Table>
+    <Name>Singapore</Name>
+  </Table>
+  <Table>
+    <Name>Slovak Republic</Name>
+  </Table>
+  <Table>
+    <Name>Slovenia</Name>
+  </Table>
+  <Table>
+    <Name>Solomon Islands</Name>
+  </Table>
+  <Table>
+    <Name>Somalia</Name>
+  </Table>
+  <Table>
+    <Name>South Africa</Name>
+  </Table>
+  <Table>
+    <Name>South Korea</Name>
+  </Table>
+  <Table>
+    <Name>Spain</Name>
+  </Table>
+  <Table>
+    <Name>Sri Lanka</Name>
+  </Table>
+  <Table>
+    <Name>Sudan</Name>
+  </Table>
+  <Table>
+    <Name>Suriname</Name>
+  </Table>
+  <Table>
+    <Name>Svalbard and Jan Mayen Islands</Name>
+  </Table>
+  <Table>
+    <Name>Swaziland</Name>
+  </Table>
+  <Table>
+    <Name>Sweden</Name>
+  </Table>
+  <Table>
+    <Name>Switzerland</Name>
+  </Table>
+  <Table>
+    <Name>Syria</Name>
+  </Table>
+  <Table>
+    <Name>Tadjikistan</Name>
+  </Table>
+  <Table>
+    <Name>Taiwan</Name>
+  </Table>
+  <Table>
+    <Name>Tanzania</Name>
+  </Table>
+  <Table>
+    <Name>Thailand</Name>
+  </Table>
+  <Table>
+    <Name>Togo</Name>
+  </Table>
+  <Table>
+    <Name>Tokelau</Name>
+  </Table>
+  <Table>
+    <Name>Tonga</Name>
+  </Table>
+  <Table>
+    <Name>Trinidad and Tobago</Name>
+  </Table>
+  <Table>
+    <Name>Tunisia</Name>
+  </Table>
+  <Table>
+    <Name>Turkey</Name>
+  </Table>
+  <Table>
+    <Name>Turkmenistan</Name>
+  </Table>
+  <Table>
+    <Name>Turks and Caicos Islands</Name>
+  </Table>
+  <Table>
+    <Name>Tuvalu</Name>
+  </Table>
+  <Table>
+    <Name>Uganda</Name>
+  </Table>
+  <Table>
+    <Name>Ukraine</Name>
+  </Table>
+  <Table>
+    <Name>United Arab Emirates</Name>
+  </Table>
+  <Table>
+    <Name>United Kingdom</Name>
+  </Table>
+  <Table>
+    <Name>United States</Name>
+  </Table>
+  <Table>
+    <Name>Uruguay</Name>
+  </Table>
+  <Table>
+    <Name>USA Minor Outlying Islands</Name>
+  </Table>
+  <Table>
+    <Name>Uzbekistan</Name>
+  </Table>
+  <Table>
+    <Name>Vanuatu</Name>
+  </Table>
+  <Table>
+    <Name>Venezuela</Name>
+  </Table>
+  <Table>
+    <Name>Vietnam</Name>
+  </Table>
+  <Table>
+    <Name>Virgin Islands (British)</Name>
+  </Table>
+  <Table>
+    <Name>Virgin Islands (USA)</Name>
+  </Table>
+  <Table>
+    <Name>Wallis and Futuna Islands</Name>
+  </Table>
+  <Table>
+    <Name>Western Sahara</Name>
+  </Table>
+  <Table>
+    <Name>Yemen</Name>
+  </Table>
+  <Table>
+    <Name>Yugoslavia</Name>
+  </Table>
+  <Table>
+    <Name>Zaire</Name>
+  </Table>
+  <Table>
+    <Name>Zambia</Name>
+  </Table>
+  <Table>
+    <Name>Zimbabwe</Name>
+  </Table>
+</NewDataSet>]]]]>><![CDATA[</GetCountriesResult>\r
+      </GetCountriesResponse>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:assertion type="SOAP Response" id="8c70b11d-ff67-4a6e-815b-7f13e1ca580a"/><con:assertion type="Schema Compliance" id="5e8c7b80-bd78-4bf0-ae09-d92170eb4444"><con:configuration/></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="transfer" name="CountryName" id="92396773-09e6-477d-9cf8-04ba64030591"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>cn</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>SOAP Request-GetCountries</con:sourceStep><con:targetType>Request</con:targetType><con:targetStep>SOAP Request-GetCurrencyByCountry</con:targetStep><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
